@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ContactUs</title>
+    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/3d3d8e6dc1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,6 @@
         * {
             margin: 0%;
             padding: 0%;
-
         }
 
         .mot {
@@ -65,7 +65,7 @@
 
         }
 
-        header a:hover {
+        a:hover {
             color: rgb(248, 145, 10);
             cursor: pointer;
             text-decoration: underline;
@@ -81,8 +81,15 @@
             font-weight: 200;
             color: rgb(75, 57, 51);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 23px;
+            font-size: 20px;
 
+        }
+
+        .anc.active {
+            color: rgb(248, 145, 10);
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 30px;
         }
 
         input {
@@ -125,18 +132,14 @@
         .foot {
             color: rgb(83, 60, 60);
             text-shadow: 1px 1px 1px rgb(19, 18, 18);
-            font-size: 30px;
-            font-weight: 600;
+            font-size: 25px;
+            font: weight 500px;
+            ;
             padding: 20px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: left;
             line-height: 40px;
 
-        }
-
-        .an:hover {
-            font-size: 55px;
-            color: brown;
         }
 
         form {
@@ -148,7 +151,6 @@
             width: fit-content;
             box-shadow: 2px 2px 2px rgb(119, 117, 117), 2px 2px 2px rgb(119, 117, 117);
             font-family: Arial, Helvetica, sans-serif;
-
         }
 
         form h3 {
@@ -158,7 +160,6 @@
             margin: 10px;
             text-align: center;
             font-size: 28px;
-
         }
 
         form input,
@@ -178,10 +179,23 @@
             background-color: rgb(231, 243, 239);
             border-radius: 40px;
             color: rgb(92, 90, 90);
-
             font-size: 20px;
+        }
 
+        footer {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(201, 160, 240);
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 1px rgb(12, 12, 12), 1px 1px 1px rgb(15, 15, 15), 1px 1px 1px rgb(15, 15, 15);
+            color: crimson;
+            justify-content: space-around;
+            font-size: 18px;
+        }
 
+        footer h3 {
+            padding-top: 10px;
         }
     </style>
 </head>
@@ -200,16 +214,15 @@
     </div><br><br><br>
     <header>
         <div style="display: flex;"><img src="logo.png" width="100px" height="90px">
-            <h5><span style="font-size: 40px;">S</span>HYAMALA <span style="font-size: 40px;">&nbsp;E</span>NTERPRICES
+            <h5><span style="font-size: 40px;">S</span>HYAMALA <span style="font-size: 40px;">&nbsp;E</span>NTERPRISES
             </h5>
         </div>
-
         <div style="width:900px; display: flex; justify-content: space-evenly;gap: 20px;">
             <div><a class="anc" href="index.html">Home</a></div>
             <div><a class="anc" href="service.html">Services</a></div>
             <div><a class="anc" href="portfolio.html">Portfolio</a></div>
-            <div><a class="anc" href="gallery.html">Gallery</a></div>
-            <div><a class="anc" href="contact.html">ContactUs</a></div>
+            <div><a class="anc " href="gallery.html">Gallery</a></div>
+            <div><a class="anc active" href="contact.html">ContactUs</a></div>
             <div><a class="anc" href="client.html">Clients</a></div>
             <div><a class="anc" href="aboutus.html">AboutUs</a></div>
         </div>
@@ -220,12 +233,10 @@
         <h5>Contact Us</h5>
     </div>
     <hr><br>
-
-
     <div class="contact" style="display: flex; justify-content: space-evenly;">
         <div class="foot">
             <div class="coname">
-                <h2>SHYAMALA ENTERPRICES</h2>
+                <h2>SHYAMALA ENTERPRISES</h2>
             </div><br>
             F4,B4 Badal Building,Second Main road,<br>Ganapathy Nagar,
             Madambakkam,Chennai-600012 <br><i style="color: rgb(84, 84, 150);font-size: 40px;"
@@ -233,8 +244,10 @@
                 style="color: rgb(84, 84, 150);font-size: 40px;"
                 class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;+91-9941254195<br>
             FOLLOW US:<br>
-            <a class="an" href="https://www.facebook.com/profile.php?id=100064648704999&mibextid=ZbWKwL"> <i
-                    style=" color: rgb(84, 84, 150);font-size: 50px;" class="fa-brands fa-facebook"></i></a>
+            <fb><a href="https://www.facebook.com/profile.php?id=100064648704999&mibextid=ZbWKwL"> <i
+                        style=" color: rgb(84, 84, 150);font-size: 50px;" class="fa-brands fa-facebook"></i></a>
+                &nbsp;<i style=" color: rgb(84, 84, 150);font-size: 50px;" class="fa-brands fa-instagram"></i> &nbsp;<i
+                    style=" color: rgb(84, 84, 150);font-size: 50px;" class="fa-brands fa-youtube"></i></fb>
         </div>
         <div class="f1">
             <form action="https://formsubmit.co/shyamalaenterprises@gmail.com" method="POST">
@@ -247,6 +260,12 @@
             </form>
         </div>
     </div>
+    <br><br>
+    <footer>
+        <h3>&copy;2024 SHYAMALA ENTERPRISES.All Rights Reserved</h3>
+        <div>DESIGNED BY<br>Poonguzhalli.S & Rakshana.S
+        </div>
+    </footer>
 </body>
 
 </html>

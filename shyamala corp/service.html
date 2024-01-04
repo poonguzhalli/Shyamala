@@ -86,8 +86,15 @@
         font-weight: 200;
         color: rgb(75, 57, 51);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 23px;
+        font-size: 20px;
 
+    }
+
+    .anc.active {
+        color: rgb(248, 145, 10);
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 30px;
     }
 
     h1 {
@@ -137,12 +144,22 @@
         font-size: 35px;
     }
 
-    .foot {        
-        background-image: url("footfinal.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-size: 300px 100px;
-    }
+    footer {
+  width: 100%;
+  height:60px;
+  background-color: rgb(201, 160, 240);
+  display: flex;
+  font-family:Arial, Helvetica, sans-serif;
+  
+  text-shadow: 1px 1px 1px rgb(12, 12, 12),1px 1px 1px rgb(15, 15, 15),1px 1px 1px rgb(15, 15, 15);
+  color: crimson;
+  justify-content: space-around;
+  font-size: 18px;
+  }
+  footer h3{
+    padding-top: 15px;
+  }
+  
 </style>
 
 <body style="background-color:rgb(247, 232, 204);">
@@ -159,13 +176,13 @@
     </div><br><br><br>
     <header>
         <div style="display: flex;"><img src="logo.png" width="100px" height="90px">
-            <h5><span style="font-size: 40px;">S</span>HYAMALA <span style="font-size: 40px;">&nbsp;E</span>NTERPRICES
+            <h5><span style="font-size: 40px;">S</span>HYAMALA <span style="font-size: 40px;">&nbsp;E</span>NTERPRISES
             </h5>
         </div>
 
         <div style="width:900px; display: flex; justify-content: space-evenly;gap: 20px;">
             <div><a class="anc" href="index.html">Home</a></div>
-            <div><a class="anc" href="service.html">Services</a></div>
+            <div><a class="anc active" href="service.html">Services</a></div>
             <div><a class="anc" href="portfolio.html">Portfolio</a></div>
             <div><a class="anc" href="gallery.html">Gallery</a></div>
             <div><a class="anc" href="contact.html">ContactUs</a></div>
@@ -295,11 +312,15 @@
             </ul>
         </div>
 
-    </div>
-    <div class="foot">
+    </div><br>
+    <hr>
+    <footer>
+        <h3 >&copy;2024 SHYAMALA ENTERPRISES.All Rights Reserved</h3>
+      <div>DESIGNED BY:<br>Poonguzhalli.S & Rakshana.S
+      </div>
 
-    </div>
-    
+    </footer>
+
 </body>
 
 

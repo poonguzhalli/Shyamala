@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about us</title>
+    <script src="main.js"></script>
 
     <script src="https://kit.fontawesome.com/3d3d8e6dc1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,6 @@
         }
 
         .mot {
-
             font-family: 'Dancing Script', cursive;
             text-align: center;
             display: flex;
@@ -26,24 +26,9 @@
             color: black;
             text-shadow: 1px 1px 1px rgb(145, 139, 139);
             width: 100%;
-            height: 54px;
+            height: 52px;
             background-color: rgb(224, 143, 84);
-            padding-top: 3px;
 
-
-        }
-
-        .top {
-            position: static;
-            width: 100%;
-            height: 60px;
-            background-color: rgb(132, 132, 206);
-            text-align: center;
-            font-size: 55px;
-            font-family: calibri;
-            color: rgb(204, 87, 45);
-            padding-top: 6px;
-            text-shadow: 2px 3px 2px rgb(20, 20, 20);
         }
 
         header {
@@ -57,7 +42,6 @@
             position: fixed;
         }
 
-
         header,
         p .compname {
             color: rgb(42, 83, 158);
@@ -67,6 +51,7 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
         }
+
 
         a:hover {
             color: rgb(248, 145, 10);
@@ -85,18 +70,39 @@
             font-weight: 200;
             color: rgb(75, 57, 51);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 23px;
+            font-size: 20px;
 
         }
+
+        .anc.active {
+            color: rgb(248, 145, 10);
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+
+        .top {
+            position: static;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(132, 132, 206);
+            text-align: center;
+            font-size: 55px;
+            font-family: calibri;
+            color: rgb(204, 87, 45);
+            padding-top: 6px;
+            text-shadow: 2px 3px 2px rgb(20, 20, 20);
+        }
+
 
 
         .intro {
 
             margin: 40px;
-            padding: 20px;
+            padding: 25px;
             text-align: justify;
-            width: 600px;
-            height: 500px;
+            width: 900px;
+            height: 100%;
             box-shadow: 1px 1px 2px black, 0 0 20px rgb(20, 20, 20), 0 0 5px rgb(25, 25, 26);
             gap: 5px;
         }
@@ -116,13 +122,13 @@
             margin-top: 45px;
             box-shadow: 1px 1px 2px black, 0 0 20px rgb(20, 20, 20), 0 0 5px rgb(25, 25, 26);
             position: static;
-            padding: 15px;
+            padding: 18px;
         }
 
         .sidenav button,
         .dropdown-btn {
             text-align: center;
-            padding: 6px 8px 6px 16px;
+            padding: 6px;
             text-decoration: none;
             font-size: 20px;
             color: rgb(75, 57, 51);
@@ -150,7 +156,7 @@
         .dropdown-container {
             display: none;
             background-color: rgb(174, 174, 243);
-            padding-left: 8px;
+            padding: 5px;
         }
 
         /* Optional: Style the caret down icon*/
@@ -158,50 +164,71 @@
             float: left;
             padding-right: 8px;
         }
+
+        footer {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(201, 160, 240);
+            display: flex;
+            font-family: Arial, Helvetica, sans-serifs;
+            text-shadow: 1px 1px 1px rgb(12, 12, 12), 1px 1px 1px rgb(15, 15, 15), 1px 1px 1px rgb(15, 15, 15);
+            color: crimson;
+            justify-content: space-around;
+            font-size: 18px;
+        }
+
+        footer h3 {
+            padding-top: 15px;
+        }
     </style>
 
 
 </head>
 
-<body style="background-color:rgb(247, 232, 204);">
-    <div class="mot"><span style="font-size: 25px;padding-top: 5px;">
-            Powering Up Your World .
-            Wired for Excellence with Every Connection!</span>
-        <div>
-            <p style="font-size: 20px; font-family: calibri;"><i
-                    class="fa-solid fa-phone-volume"></i>&nbsp;+91-9941254195
-            </p>
-            <p style="font-size: 20px; font-family: calibri;"><i
-                    class="fa-solid fa-envelope"></i>&nbsp;shyamalaenterprises@gmail.com</p>
-        </div>
-    </div><br><br><br>
+<body style="background-color:rgb(247, 232, 204);margin: 0;padding: 0;">
+    <div>
+        <div class="mot"><span style="font-size: 25px;padding-top: 5px;">
+                Powering Up Your World .
+                Wired for Excellence with Every Connection!</span>
+            <div>
+                <span style="font-size: 20px; font-family: calibri;"><i
+                        class="fa-solid fa-phone-volume"></i>&nbsp;+91-9941254195
+                </span><br>
+                <span style="font-size: 20px; font-family: calibri;"><i
+                        class="fa-solid fa-envelope"></i>&nbsp;shyamalaenterprises@gmail.com</span>
+            </div>
+        </div><br><br><br>
+        <header>
+            <div style="display: flex;"><img src="logo.png" width="100px" height="90px">
+                <h5><span style="font-size: 40px;">S</span>HYAMALA <span
+                        style="font-size: 40px;">&nbsp;E</span>NTERPRISES
+                </h5>
+            </div>
 
-    <header>
-        <div style="display: flex;"><img src="logo.png" width="100px" height="90px">
-            <h5><span style="font-size: 40px;">S</span>HYAMALA <span style="font-size: 40px;">&nbsp;E</span>NTERPRICES
-            </h5>
-        </div>
-
-        <div style="width:900px; display: flex; justify-content: space-evenly;gap: 20px;">
-            <div><a class="anc" href="index.html">Home</a></div>
-            <div><a class="anc" href="service.html">Services</a></div>
-            <div><a class="anc" href="portfolio.html">Portfolio</a></div>
-            <div><a class="anc" href="gallery.html">Gallery</a></div>
-            <div><a class="anc" href="contact.html">ContactUs</a></div>
-            <div><a class="anc" href="client.html">Clients</a></div>
-            <div><a class="anc" href="aboutus.html">AboutUs</a></div>
-        </div>
-    </header>
-    <br><br><br><br><br>
+            <div style="width:900px; display: flex; justify-content: space-evenly;gap: 20px;">
+                <div><a class="anc " href="index.html">Home</a></div>
+                <div><a class="anc" href="service.html">Services</a></div>
+                <div><a class="anc" href="portfolio.html">Portfolio</a></div>
+                <div><a class="anc" href="gallery.html">Gallery</a></div>
+                <div><a class="anc" href="contact.html">ContactUs</a></div>
+                <div><a class="anc" href="client.html">Clients</a></div>
+                <div><a class="anc active" href="aboutus.html">AboutUs</a></div>
+            </div>
+        </header>
+    </div><br><br><br><br><br>
     <hr>
     <div class="top">
         <h5>About Us</h5>
     </div>
     <hr>
-    <div style="display: flex;justify-content: space-evenly;">
+
+
+    <hr>
+    <div style="display: flex;justify-content: space-between;">
         <div class="intro">
-            <img style="float: left; margin-right: 20px;" src="abtintro.jpg" height="250px">
-            <p><span style="font-size: 35px;">We</span> introduce ourselves as an Engineering Organization and
+            <img style="float: left; margin-right: 20px;" src="abtintro.jpg" width="300px" height="250px">
+            <p><span style="font-size: 35px;font-weight: bold;">We</span> introduce ourselves as an Engineering
+                Organization and
                 Electrical “A” Grade contractor comprising of
                 individuals having experience in the field of Industrial & Commercial complex Electrification work and
                 Mechanical
@@ -302,7 +329,13 @@
                 }
             </script>
         </div>
+
     </div>
+    <footer>
+        <h3>&copy;2024 SHYAMALA ENTERPRISES.All Rights Reserved</h3>
+        <div>DESIGNED BY<br>Poonguzhalli.S & Rakshana.S
+        </div>
+    </footer>
 
 
 
