@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <script src="main.js"></script>
+
+    <script src="https://kit.fontawesome.com/3d3d8e6dc1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .mot {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            position: fixed;
+            color: black;
+            text-shadow: 1px 1px 1px rgb(145, 139, 139);
+            width: 100%;
+            height: 52px;
+            background-color: rgb(224, 143, 84);
+
+        }
+
+        header {
+            background-color: rgb(174, 174, 243);
+            border-style: none;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+        }
+
+        header,
+        p .compname {
+            color: rgb(42, 83, 158);
+            text-shadow: 2px 3px 1px rgb(18, 18, 19);
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+
+        a:hover {
+            color: rgb(248, 145, 10);
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 30px;
+
+        }
+
+        .anc {
+            margin-top: 50px;
+            justify-content: center;
+            text-decoration: none;
+            text-shadow: 0px 1px 1px rgb(46, 45, 45);
+            text-transform: capitalize;
+            font-weight: 200;
+            color: rgb(75, 57, 51);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+
+        }
+
+        .anc.active {
+            color: rgb(248, 145, 10);
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+
+        .top {
+            position: static;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(132, 132, 206);
+            text-align: center;
+            font-size: 55px;
+            font-family: calibri;
+            color: rgb(204, 87, 45);
+            padding-top: 6px;
+            text-shadow: 2px 3px 2px rgb(20, 20, 20);
+        }
+
+
+
+        .intro {
+
+            margin: 40px;
+            padding: 25px;
+            text-align: justify;
+            width: 900px;
+            height: 100%;
+            box-shadow: 1px 1px 2px black, 0 0 20px rgb(20, 20, 20), 0 0 5px rgb(25, 25, 26);
+            gap: 5px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 22px;
+            font-family: calibri;
+            list-style: none;
+            line-height: 28px;
+        }
+
+        .sidenav {
+            width: 650px;
+            height: 100%;
+            margin: 30px;
+            margin-top: 45px;
+            box-shadow: 1px 1px 2px black, 0 0 20px rgb(20, 20, 20), 0 0 5px rgb(25, 25, 26);
+            position: static;
+            padding: 18px;
+        }
+
+        .sidenav button,
+        .dropdown-btn {
+            text-align: center;
+            padding: 6px;
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(75, 57, 51);
+            text-shadow: 0px 1px 1px rgb(46, 45, 45);
+            display: block;
+            border: #262626;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .sidenav button:hover,
+        .dropdown-btn:hover {
+            color: rgb(97, 44, 23);
+            background-color: rgb(132, 132, 206);
+        }
+
+        button.active {
+            background-color: green;
+            color: white;
+        }
+
+        .dropdown-container {
+            display: none;
+            background-color: rgb(174, 174, 243);
+            padding: 5px;
+        }
+
+        /* Optional: Style the caret down icon*/
+        .fa-caret-down {
+            float: left;
+            padding-right: 8px;
+        }
+
+        footer {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(201, 160, 240);
+            display: flex;
+            font-family: Arial, Helvetica, sans-serifs;
+            text-shadow: 1px 1px 1px rgb(12, 12, 12), 1px 1px 1px rgb(15, 15, 15), 1px 1px 1px rgb(15, 15, 15);
+            color: crimson;
+            justify-content: space-around;
+            font-size: 18px;
+        }
+
+        footer h3 {
+            padding-top: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-color:rgb(247, 232, 204);margin: 0;padding: 0;">
+    <div>
+        <div class="mot"><span style="font-size: 25px;padding-top: 5px;">
+                Powering Up Your World .
+                Wired for Excellence with Every Connection!</span>
+            <div>
+                <span style="font-size: 20px; font-family: calibri;"><i
+                        class="fa-solid fa-phone-volume"></i>&nbsp;+91-9941254195
+                </span><br>
+                <span style="font-size: 20px; font-family: calibri;"><i
+                        class="fa-solid fa-envelope"></i>&nbsp;shyamalaenterprises@gmail.com</span>
+            </div>
+        </div><br><br><br>
+        <header>
+            <div style="display: flex;"><img src="logo.png" width="100px" height="90px">
+                <h5><span style="font-size: 40px;">S</span>HYAMALA <span
+                        style="font-size: 40px;">&nbsp;E</span>NTERPRISES
+                </h5>
+            </div>
+
+            <div style="width:900px; display: flex; justify-content: space-evenly;gap: 20px;">
+                <div><a class="anc " href="index.html">Home</a></div>
+                <div><a class="anc" href="service.html">Services</a></div>
+                <div><a class="anc" href="portfolio.html">Portfolio</a></div>
+                <div><a class="anc" href="gallery.html">Gallery</a></div>
+                <div><a class="anc" href="contact.html">ContactUs</a></div>
+                <div><a class="anc" href="client.html">Clients</a></div>
+                <div><a class="anc active" href="aboutus.html">AboutUs</a></div>
+            </div>
+        </header>
+    </div><br><br><br><br><br>
+    <hr>
+    <div class="top">
+        <h5>About Us</h5>
+    </div>
+    <hr>
+
+
+    <hr>
+    <div style="display: flex;justify-content: space-between;">
+        <div class="intro">
+            <img style="float: left; margin-right: 20px;" src="abtintro.jpg" width="300px" height="250px">
+            <p><span style="font-size: 35px;font-weight: bold;">We</span> introduce ourselves as an Engineering
+                Organization and
+                Electrical “A” Grade contractor comprising of
+                individuals having experience in the field of Industrial & Commercial complex Electrification work and
+                Mechanical
+                fabrications.
+                Founded in 2007,it expanded into he electrical engineering and solar power fields according to a
+                predetermined route. Our project engineering firm that specializes in carrying our trunkey contracts for
+                HT & LT
+                Electrical,Solar energy,CCTV,IT Networking and Telecom Projects across INDIA.Completed projects in mass
+                housing,water and effluent Treatment Plants,Power
+                production,Automobiles,Information Technology,Cement & electronics.
+            </p>
+        </div>
+        <div class="sidenav">
+            <p
+                style="font-size: 40px;text-align: center;font-family: calibri;font-weight: bold;color: rgb(243, 103, 52);text-shadow: 2px 2px 2px black;">
+                Our Principles</p><br>
+
+            <button class="dropdown-btn">Mission
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <img style="float: right;margin-left: 10px;" src="mission.jpg">
+                <p style="line-height: 35px;font-size: 25px;">Empowering a sustainable future through innovative
+                    electrical and solar solutions, committed to excellence, safety, and environmental responsibility.
+                </p>
+            </div>
+            <button class="dropdown-btn">Vision
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <img style="float: right;margin-left: 10px;" src="vision.jpg">
+                <p>We will help our principals & customers succeed by understanding their needs and by providing them
+                    quality products and services. We will also create exceptional value for our customers, associates
+                    and shareholders through operational excellence combined with growth through delivery of new
+                    products & services.</p>
+            </div>
+            <button class="dropdown-btn">Our Values
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <img style="float: right;margin-left: 10px;" src="value.jpg">
+                <p>We believe in transparency in every sector of our business with integrity, reliability, commitment
+                    and fairness being the chief corner stones of our core values. We believe in the growth and
+                    empowerment of all our employees. We believe and promote fairness in value for money in our sales,
+                    workmanship and after sales support to all our customers based on a mutual beneficial relationship.
+                </p>
+            </div>
+            <button class="dropdown-btn">Team Strength
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <img style="float: right;margin-left: 10px;" src="teamstrength.jpg">
+                <p>Decorated, well-experienced, Business Managers constituting a mature and well- integrated management.
+                    Technical Project engineers who are engineering professionals with wide experience and technical
+                    know-how
+                    Technicians with wide experience of Industrial and commercial Projects.Having our on-roll labour
+                    staff for Cabling, Conducting, Installation & Service projects</p>
+            </div>
+            <button class="dropdown-btn">Our Growth
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <img style="float: right;margin-left: 10px;" src="growth.jpg">
+                <p>As we grow, we want to grow right. For example, we recognize that we have to be in constant touch
+                    with our clients to ensure our quality of service at all times. This is the nature of the channels
+                    we deal with. Also, we intend to build our management team correctly. We need the right people in
+                    the right place at the right time if we are to
+                    ensure optimum growth. We intend to develop our team so that our people can grow as the company
+                    grows -- a mutually beneficial relationship.
+                </p>
+            </div>
+            <button class="dropdown-btn">Quality Policy
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <img style="float: right;margin-left: 10px;" src="quality.jpg">
+                <ul style="font-family: calibri;font-size: 22px;padding-left: 10px;text-align: justify;">All associates
+                    of Shyamala Enterpises are committed to:
+                    <li> Understanding our customer’s expectations for the products and services we offer.</li>
+                    <li> Meeting or exceeding those expectations utilizing continuous improvement processes.</li>
+                    <li> Measuring our performance in meeting those expectations.</li>
+                </ul>
+            </div>
+            <script>
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+
+                for (i = 0; i < dropdown.length; i++) {
+                    dropdown[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var dropdownContent = this.nextElementSibling;
+                        if (dropdownContent.style.display === "block") {
+                            dropdownContent.style.display = "none";
+                        } else {
+                            dropdownContent.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+        </div>
+
+    </div>
+    <footer>
+        <h3>&copy;2024 SHYAMALA ENTERPRISES.All Rights Reserved</h3>
+        <div>DESIGNED BY<br>Poonguzhalli.S & Rakshana.S
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
